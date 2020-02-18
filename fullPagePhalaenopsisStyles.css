@@ -1,0 +1,257 @@
+
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding:0;
+ font-size:14px;
+ font-family: Verdana, Geneva, sans-serif;
+}
+
+html{
+ height:100%;
+ width:100%;
+ padding:0;
+}
+
+body{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: 100%;
+ width: 100%;
+ margin:0;
+ line-height: 1.6;
+}
+
+/* contains all sections */
+#mainContainerPhalaenopsis{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+ margin: 0;
+ padding:0;
+}
+
+/* targets nested sections */
+.nestedItems{
+ padding: .2rem;
+ height: 100vh;
+ width: 100vw;
+ margin:0px;
+}
+
+/* Header Slanted */
+
+#slantedHeaderPhalaenopsis{
+position: relative;
+background-image: url("Images/Phalaenopsis-pink-2560x1095.jpg"); /* The image used*/
+background-color: #cccccc; /* Used if the image is unavailable */
+height: 300px; /* You must set a specified height */
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* Triangle svg that overlaps main header to create angle look */
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+#mainHeader{
+  text-align: center;
+  padding: 100px 0;
+  color: white;
+  font-size: 3.5rem;
+}
+
+/* --CONTENT SECTION-- */
+#contentSectionPhalaenopsis{
+  text-align: center;
+  margin: 5px auto;
+  height: auto;
+  width:100vw;
+  padding: 10px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#phalaenopsisSubHeading{
+ padding: 20px 0;
+ text-align: center;
+ color: black;
+ font-size: 2.2rem;
+}
+
+.phalaenopsisP{
+margin: 5px auto;
+text-align: left;
+padding: 5px;
+font-size: 1.2rem;
+width:90%;
+}
+
+.emphasizedText{
+font-weight: bold;
+font-style: italic;
+}
+
+#sourceQuote{
+line-height: 1.6;
+font-style: italic;
+font-size: 1rem;
+margin:50px auto;
+text-align:center;
+}
+
+/* ----phalaenopsis carousel styles---- */
+/* section holding carousel */
+
+#galleryPhalaenopsis{
+  margin: 5px auto;
+  max-height: 95vh;
+  width:100vw;
+  padding: 10px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#phalaenopsisCarouselHeading {
+padding: 20px 0;
+text-align: center;
+color: black;
+font-size: 2.2rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+  height:60vh;
+  border: 1px solid #ababab;
+}
+
+/* give size to div holding img */
+.imgDivs{
+  height:100%;
+  width:100%;
+}
+
+/* align each image */
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#carouselQuote{
+  display: block;
+  width: 350px;
+  height:50px;
+  line-height: 1.6;
+  font-style: italic;
+  font-size: 1rem;
+  margin:50px auto 10px auto;
+  text-align:center;
+}
+
+#returnLink2{
+color: black;
+font-family:Verdana, Geneva, sans-serif;
+display: block;
+width: 350px;
+height:50px;
+line-height: 1.6;
+font-size: 1rem;
+margin:10px auto 10px auto;
+text-align:center;
+}
+
+#returnLink2:hover {
+  color: red;
+	bottom:0;
+}

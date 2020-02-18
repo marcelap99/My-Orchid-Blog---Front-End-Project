@@ -1,0 +1,215 @@
+*{
+ box-sizing: border-box;
+ padding: 0;
+ margin:0;
+ color: white;
+ font-size: 14px;
+ line-height: 1.6em;
+ font-family: Verdana, Geneva, sans-serif;
+}
+
+/*  REMOVE BORDER FROM SHADOW ROOT */
+input#hcb_form_name.hcb-shadow-r{
+  border:none;
+}
+
+/* MAIN CONTAINER WRAPPER */
+#myWrapperDiv{
+  background: url(Images/blueOrchid2.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+
+/* COMMENT CONTAINER*/
+#HCB_comment_box{
+  color: white;
+  display: flex;
+  justify-content: center;
+  height:100vh;
+  width:100vw;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin:0;
+}
+
+/*  BOTTOM HALF*/
+#HCB_comment_form_box {
+  border: 0.8px solid #909091;
+  height: 65%;
+  width: 80%;
+  color: white;
+  margin-bottom:25px;
+}
+
+/* CHANGES TEXT COLOR ON SUBMIT */
+#HCB_comment_box .text-blur {
+  color: red;
+}
+#HCB_comment_box .text-focus {
+  color: darkred;
+}
+
+/* H3 HEADING */
+#HCB_comment_box h3 {
+  height: auto;
+  width: auto;
+  color: white;
+  font-size: 3.5rem;
+  padding: 5px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* GRAB & STYLE PLACEHOLDER NAME*/
+input[type="text"]#hcb_form_name.hcb-shadow-r::-webkit-input-placeholder {
+  color: white;
+  padding:5px;
+}
+
+/* NAME INPUT STYLES */
+input#hcb_form_name {
+  height: 100%;
+  width: 100%;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+  font-size: 1.5em;
+  background-color: rgba(51, 51, 51, 0.2);
+}
+
+/* GRAB & STYLE COMMENT BOX PLACEHOLDER */
+#hcb_form_content.commentbox.hcb-shadow-r::-webkit-input-placeholder {
+  color: white;
+  padding:5px;
+}
+
+/* COMMENT TEXTAREA */
+#HCB_comment_box textarea {
+  min-height: 200px;
+  background: none;
+  font-size: 1.2em;
+  background-color: rgba(51, 51, 51, 0.2);
+  border-left: none;
+  border-right: none;
+  border-bottom:1px solid #909091;
+  border-top: 1px solid #909091;
+}
+
+/* SUBMIT BTN */
+#HCB_comment_box .submit {
+  background: none; /* Clear twitter bootstrap style. */
+  color: white;
+}
+
+input#hcb_submit.submit {
+  border: 1px solid #909091 !important;
+  box-shadow: 3px 5px 50px 3px #e0e0e0;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+  height: auto;
+  width: auto;
+  padding: 1px 3px;
+  text-align: center;
+  display: inline-block;
+  margin: 3px 3px;
+  cursor: pointer;
+  border-radius: 12px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+input#hcb_submit.submit:hover {
+  background-color: #5c5b5b;
+  color: red;
+}
+
+
+/* ADD IMAGE BTN */
+a.btn {
+  border: 1px solid #909091;
+   box-shadow: 3px 5px 50px 3px #e0e0e0;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+  height: auto;
+  width: auto;
+  padding: 1px 3px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: -3px;
+  margin-right: 35%;
+  cursor: pointer;
+  border-radius: 12px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+a.btn:hover {
+  background-color: #5c5b5b;
+  color: red;
+}
+
+/* SMALL ICONS */
+#HCB_comment_box .hcb-icon{
+  border: .7px solid #909091 !important;
+   box-shadow: 5px 5px 55px 10px #e0e0e0;
+  margin-top:10px;
+
+}
+
+#commentFormReturn{
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+#commentQuote{
+  display: block;
+  width: auto;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin:25px auto 30px auto;
+  text-align:center;
+}
+
+#returnLink6{
+display: block;
+height:25px;
+width: 350px;
+font-size: 1.3rem;
+margin:50px auto 5px auto;
+text-align:center;
+bottom:0;
+}
+
+#returnLink6:hover {
+  color: red;
+	bottom:0;
+}
+
+
+/* RESPONSIVE 600 PX OR LESS */
+@media only screen and (max-width: 600px) {
+  a.btn {
+    margin-left: 3px;
+    margin-right: 60%;
+    margin-top:5px;
+    width:200px;
+  }
+
+  input#hcb_submit.submit{
+    margin-top:5px;
+    margin-left:3px;
+  }
+};
